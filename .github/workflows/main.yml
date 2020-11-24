@@ -12,6 +12,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
+          rm -rf ./out
           npm run build
           npm run export
           touch ./out/.nojekyll
