@@ -1,7 +1,12 @@
 name: Build and Deploy
-on: [push]
+on: 
+  push: 
+    branches: [master]
+  pull_request: 
+    types: [closed]
 jobs:
   build-and-deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -14,6 +19,7 @@ jobs:
           npm ci
           npm run build
           npm run export
+          touch ./out/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1        
