@@ -1,9 +1,5 @@
 name: Build and Deploy
-on: 
-  push: 
-    branches: [master]
-  pull_request: 
-    types: [closed]
+on: [push]
 jobs:
   build-and-deploy:
     if: github.event.pull_request.merged == true
