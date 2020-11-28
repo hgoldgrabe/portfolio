@@ -4,21 +4,25 @@ const styles = {
     header: {
         fontFamily: "'Work Sans', sans-serif",
         display: 'flex',
+        flexWrap: 'wrap',
         width: '100vw',
-        height: '100vh'
+        height: '100vh',
+        backgroundImage: "url('/main.jpg')",
+        backgroundPosition: "75%",
+        backgroundColor: 'lightblue',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
     },
     title: {
-        fontSize: '75px',
+        fontSize: '4em',
         width: '60%',
     },
     navbar: {
-        fontSize: '25px',
-        width: '40%',
+        fontSize: '2em',
         display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
         alignItems: 'flex-start',
-        padding: '1em'
+        zIndex: 1,
+        marginTop: '0.8em',
     },
     a: {
         textDecoration: 'inherit',
@@ -26,19 +30,37 @@ const styles = {
     }
 }
 
-function Header() {
+function Header(props) {
 	return (
 		<div style={styles.header}>
             <div style={styles.title}>
                 <Fade bottom>
-                    <div style={{fontSize: '75px'}}>Holly</div>
+                    <div>Holly Goldgrabe</div>
                 </Fade>
             </div>
-            <div style={styles.navbar}>
-                <a href='/#about' style={styles.a}>About</a>
-                <a href='/#portfolio' style={styles.a}>Portfolio</a>
-                <a href='/#contact' style={styles.a}>Contact</a>
+            <div id='navbar' style={styles.navbar}>
+                <Fade bottom>
+                    <a href='/#about' style={styles.a}>About</a>
+                    <a href='/#portfolio' style={styles.a}>Portfolio</a>
+                    <a href='/#contact' style={styles.a}>Contact</a>
+                </Fade>
             </div>
+            <style jsx>{`
+                @media (orientation: landscape) {
+                    #navbar {
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        width: 40%;
+                    }
+                }
+                @media (orientation: portrait) {
+                    #navbar {
+                        flex-direction: column;
+                        width: 100%;
+                        justify-content: space-around;
+                    }
+                }
+            `}</style>
 		</div>
 	);
 }

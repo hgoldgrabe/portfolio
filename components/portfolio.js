@@ -1,9 +1,11 @@
 import Carousel from 'nuka-carousel';
+import Fade from 'react-reveal/Fade';
 
 const styles = {
     section: {
         height: '100vh',
-        backgroundColor: 'pink'
+        backgroundColor: 'pink',
+        fontFamily: "'Open Sans', sans-serif",
     }
 }
 
@@ -84,11 +86,13 @@ function DigitalLayout () {
 function Portfolio () {
 	return (
 		<div id='portfolio' style={styles.section}>
-            <Carousel style={{height: '100%'}} wrapAround={true}>
-                <PrintLayout1/>
-                <PrintLayout2/>
-                <DigitalLayout/>
-            </Carousel>
+            {/* <Fade bottom> */}
+                <Carousel style={{height: '100%'}} wrapAround={true}>
+                    <PrintLayout1/>
+                    <PrintLayout2/>
+                    <DigitalLayout/>
+                </Carousel>
+            {/* </Fade> */}
 		</div>
 	);
 }
