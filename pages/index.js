@@ -1,14 +1,17 @@
-import Fade from 'react-reveal/Fade';
+import Header from '../components/header';
+import About from '../components/about';
+import Portfolio from '../components/portfolio';
+import Contact from '../components/contact';
 
-
-function Portfolio() {
+function Home() {
 	return (
-		<div>
-			<Fade bottom>
-				<h1>Holly's Portfolio</h1>
-			</Fade>
+		<div style={{display: 'flex', flexDirection: 'column'}}>
+			<Header/>
+			<About/>
+			<Portfolio/>
+			<Contact/>
 		</div>
 	);
 }
   
-export default Portfolio
+export default Home
