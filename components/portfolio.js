@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 const styles = {
     section: {
         height: '100vh',
-        backgroundColor: 'pink',
+        backgroundColor: '#DAF7F8',
         fontFamily: "'Open Sans', sans-serif",
     }
 }
@@ -87,7 +87,15 @@ function Portfolio () {
 	return (
 		<div id='portfolio' style={styles.section}>
             {/* <Fade bottom> */}
-                <Carousel style={{height: '100%'}} wrapAround={true}>
+                <Carousel 
+                    style={{height: '100%'}} 
+                    wrapAround={true}
+                    swiping={true}
+                    defaultControlsConfig={{
+                        nextButtonText: '>',
+                        prevButtonText: '<',
+                    }}
+                >
                     <PrintLayout1/>
                     <PrintLayout2/>
                     <DigitalLayout/>
