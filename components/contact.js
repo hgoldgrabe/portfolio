@@ -6,7 +6,7 @@ function Contact() {
             <Fade bottom>
                 <div className='getInTouch'>Get in Touch</div>
                 <div className='contactSection'>
-                    <a className='mailTo' href="mailto:hgoldgrabe@gmail.com"><img src='/email.svg'/></a>
+                    <a className='mailTo' href="mailto:hgoldgrabe@gmail.com"><img src='/images/email.svg'/></a>
                     <div>&nbsp;&nbsp;</div>
                     <div>hgoldgrabe@gmail.com</div>
                 </div>

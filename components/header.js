@@ -26,7 +26,7 @@ function Header(props) {
                     flex-wrap: wrap;
                     width: 100vw;
                     height: 100vh;
-                    background-image: url('/main.jpg');
+                    background-image: url('/images/main.jpg');
                     background-position: 75%;
                     background-color: lightblue;
                     background-size: cover;

@@ -21,7 +21,7 @@ function About() {
                 #aboutBackgroundImage {
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-image: url('/yosemite.png');
+                    background-image: url('/images/yosemite.png');
                     opacity: 0.5;
                     background-color: white;
                     filter: grayscale(100%);
