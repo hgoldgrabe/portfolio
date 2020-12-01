@@ -4,8 +4,8 @@ const styles = {
     section: {
         display: 'flex',
         flexDirection: 'column',
-        paddingTop: '6em',
-        paddingBottom: '6em',
+        paddingTop: '10em',
+        paddingBottom: '10em',
         paddingLeft: '10em',
         paddingRight: '10em',
         position: 'relative',
