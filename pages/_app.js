@@ -15,6 +15,12 @@ function MyApp({ Component, pageProps }) {
 		<Head>
 			<title>Holly Goldgrabe</title>
 			<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+			<style jsx>{`
+				@font-face {
+					font-family: 'Cherolina';
+					src: url('/Cherolina.ttf');
+				}
+			`}</style>
 		</Head>
 		<Component {...pageProps} />
 		</>

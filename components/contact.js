@@ -19,7 +19,10 @@ function Contact() {
 		<div id='contact' style={styles.section}>
             <Fade bottom>
                 <div style={{fontFamily: "Cherolina", fontSize: '4em', alignSelf: 'center'}}>Get in Touch</div>
-                <div>Email</div>
+                <div style={{fontFamily: "'Open Sans', sans-serif", alignSelf: 'center'}}>
+                    <div></div>
+                    <div>email@email.com</div>
+                </div>
             </Fade>
 		</div>
 	);
