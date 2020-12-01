@@ -11,6 +11,8 @@ const styles = {
         position: 'relative',
         fontFamily: "'Open Sans', sans-serif",
         alignSelf: 'center',
+        background: "#EFD3CD",
+        width: '100%',
     }
 }
 

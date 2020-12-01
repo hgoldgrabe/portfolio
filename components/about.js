@@ -11,6 +11,8 @@ const styles = {
         position: 'relative',
     },
     background: {
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: "url('/yosemite.png')",
         opacity: '0.5',
         backgroundColor: 'white',
