@@ -21,9 +21,10 @@ function Contact() {
 		<div id='contact' style={styles.section}>
             <Fade bottom>
                 <div style={{fontFamily: "Cherolina", fontSize: '4em', alignSelf: 'center'}}>Get in Touch</div>
-                <div style={{fontFamily: "'Open Sans', sans-serif", alignSelf: 'center'}}>
-                    <div></div>
-                    <div>email@email.com</div>
+                <div style={{fontFamily: "'Open Sans', sans-serif", alignSelf: 'center', display: 'flex', flexDirection: 'row'}}>
+                    <a href="mailto:hgoldgrabe@gmail.com"><img src='/email.svg' style={{height: '1.5em'}}/></a>
+                    <div>&nbsp;&nbsp;</div>
+                    <div>hgoldgrabe@gmail.com</div>
                 </div>
             </Fade>
 		</div>
