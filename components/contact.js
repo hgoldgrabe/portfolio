@@ -1,32 +1,46 @@
 import Fade from 'react-reveal/Fade';
 
-const styles = {
-    section: {
-        display: 'flex',
-        flexDirection: 'column',
-        paddingTop: '6em',
-        paddingBottom: '6em',
-        paddingLeft: '10em',
-        paddingRight: '10em',
-        position: 'relative',
-        fontFamily: "'Open Sans', sans-serif",
-        alignSelf: 'center',
-        background: "#EFD3CD",
-        width: '100%',
-    }
-}
-
 function Contact() {
 	return (
-		<div id='contact' style={styles.section}>
+		<div id='contact'>
             <Fade bottom>
-                <div style={{fontFamily: "Cherolina", fontSize: '4em', alignSelf: 'center'}}>Get in Touch</div>
-                <div style={{fontFamily: "'Open Sans', sans-serif", alignSelf: 'center', display: 'flex', flexDirection: 'row'}}>
-                    <a href="mailto:hgoldgrabe@gmail.com"><img src='/email.svg' style={{height: '1.5em'}}/></a>
+                <div className='getInTouch'>Get in Touch</div>
+                <div className='contactSection'>
+                    <a className='mailTo' href="mailto:hgoldgrabe@gmail.com"><img src='/email.svg'/></a>
                     <div>&nbsp;&nbsp;</div>
                     <div>hgoldgrabe@gmail.com</div>
                 </div>
             </Fade>
+            <style jsx>{`
+                .contactSection {
+                    font-family: 'Open Sans', sans-serif;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .mailTo {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+                .getInTouch {
+                    font-family: Cherolina;
+                    font-size: 4em; 
+                    align-self: center;
+                }
+                #contact {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 6em;
+                    padding-bottom: 6em;
+                    padding-left: 10em;
+                    padding-right: 10em;
+                    position: relative;
+                    font-family: 'Open Sans', sans-serif;
+                    align-self: center;
+                    background: "#EFD3CD";
+                    width: 100%;
+                }
+            `}</style>
 		</div>
 	);
 }

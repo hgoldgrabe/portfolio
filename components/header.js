@@ -1,51 +1,44 @@
 import Fade from 'react-reveal/Fade';
 
-const styles = {
-    header: {
-        fontFamily: "'Work Sans', sans-serif",
-        display: 'flex',
-        flexWrap: 'wrap',
-        width: '100vw',
-        height: '100vh',
-        backgroundImage: "url('/main.jpg')",
-        backgroundPosition: "75%",
-        backgroundColor: 'lightblue',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-    },
-    title: {
-        fontSize: '4em',
-        width: '60%',
-    },
-    navbar: {
-        fontSize: '2em',
-        display: 'flex',
-        alignItems: 'flex-start',
-        zIndex: 1,
-        marginTop: '0.8em',
-    },
-    a: {
-        textDecoration: 'inherit',
-        color: 'inherit',
-    }
-}
-
 function Header(props) {
 	return (
-		<div style={styles.header}>
-            <div style={styles.title}>
+		<div id='header'>
+            <div id='title'>
                 <Fade bottom>
                     <div>Holly Goldgrabe</div>
                 </Fade>
             </div>
-            <div id='navbar' style={styles.navbar}>
+            <div id='navbar'>
                 <Fade bottom>
-                    <a href='/#about' style={styles.a}>About</a>
-                    <a href='/#portfolio' style={styles.a}>Portfolio</a>
-                    <a href='/#contact' style={styles.a}>Contact</a>
+                    <a href='/#about'>About</a>
+                    <a href='/#portfolio'>Portfolio</a>
+                    <a href='/#contact'>Contact</a>
                 </Fade>
             </div>
             <style jsx>{`
+                #title {
+                    font-size: 4em;
+                    width: 60%;
+                }
+                #header {
+                    font-family: 'Work Sans', sans-serif;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: url('/main.jpg');
+                    background-position: 75%;
+                    background-color: lightblue;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                #navbar {
+                    font-size: 2em;
+                    display: flex;
+                    align-items: flex-start;
+                    z-index: 1;
+                    margin-top: 0.8em;
+                }
                 @media (orientation: landscape) {
                     #navbar {
                         flex-direction: row;

@@ -1,11 +1,13 @@
 import Carousel from 'nuka-carousel';
-import Fade from 'react-reveal/Fade';
 
 const styles = {
     section: {
         height: '100vh',
         backgroundColor: '#DAF7F8',
         fontFamily: "'Open Sans', sans-serif",
+        display: 'flex',
+        flexDirection: 'column',
+        paddingTop: '6em',
     }
 }
 
@@ -86,6 +88,7 @@ function DigitalLayout () {
 function Portfolio () {
 	return (
 		<div id='portfolio' style={styles.section}>
+            <div style={{fontFamily: "Cherolina", fontSize: '4em', alignSelf: 'center'}}>Portfolio</div>
             {/* <Fade bottom> */}
                 <Carousel 
                     style={{height: '100%'}} 
