@@ -16,6 +16,8 @@
     "nuka-carousel": "^4.7.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "react-spring-lightbox": "^1.4.11",
+    "styled-components": "^5.2.1"
   }
 }
