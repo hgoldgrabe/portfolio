@@ -19,6 +19,7 @@ function Header(props) {
                 #title {
                     font-size: 4em;
                     width: 60%;
+                    padding: 1em;
                 }
                 #header {
                     font-family: 'Work Sans', sans-serif;
