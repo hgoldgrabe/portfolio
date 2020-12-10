@@ -1,6 +1,5 @@
 import Header from '../components/header';
 import About from '../components/about';
-import Portfolio from '../components/portfolio';
 import Contact from '../components/contact';
 
 function Home(props) {
@@ -8,7 +7,6 @@ function Home(props) {
 		<div style={{display: 'flex', flexDirection: 'column'}}>
 			<Header/>
 			<About/>
-			<Portfolio/>
 			<Contact/>
 		</div>
 	);
