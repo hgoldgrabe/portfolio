@@ -48,10 +48,10 @@ a {
   text-decoration: none;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Cherolina';
   src: url('/fonts/Cherolina.ttf');
-}
+} */
 
 @media (orientation: landscape) {
   .portfolioItemContainer {

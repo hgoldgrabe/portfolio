@@ -14,6 +14,7 @@ function Header(props) {
             </div>
             <style jsx> {`
                 #header {
+                    font-family: Montserrat;
                     width: 100%;
                     background-color: #B2604B;
                     text-align: center;
@@ -30,6 +31,7 @@ function Header(props) {
 
                 }
                 #links {
+                    display: flex;
                     justify-content: space-evenly;
                 }
             `}</style>
